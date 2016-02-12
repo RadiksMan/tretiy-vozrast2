@@ -1,0 +1,121 @@
+/*fotogalery*/
+    .fotogalery-wrap{
+        .fotogalery-align{ padding: 0 15px;
+            .title{font: 700 49px/49px 'proxima nova'; color:#767474; text-transform: uppercase;border-bottom: 1px solid #f9895d;     padding: 54px 0 20px; letter-spacing: -1.2px; margin-bottom: 71px;
+            }
+            .item{margin-bottom: 115px;
+                .item-title{font: 700 27px/27px 'proxima nova'; color:#f9895d;     padding-bottom: 30px; letter-spacing: -0.2px;}
+                .item-slider{
+                    .slide-wrap{
+                        .slide{ width:380px; height: 258px; display: block; position: relative; border:1px solid #f9895d; overflow: hidden;
+                            a{ position: absolute; left:50%; top:50%; transform: translate(-50%, -50%);
+                                img{ max-width: none; }
+
+                            }
+                        }
+                    }
+                }
+            }
+            .slick-next {    right: 10px;
+                &:after{content: ''; display: block; width:10px; height: 100%; right:-10px;  top:0; position: absolute; background-color: #fff; }
+            }
+        }
+    }
+/*END fotogalery*/
+/*fancybox*/
+    .fancybox-close {background-image: none; background-color: transparent; border-radius: 50%; width:40px; height: 40px;top: -10px; right: -10px; border: 2px solid #f9895d; background-color: #fff;
+        &:before{content: ''; display: block;position: absolute; width:16px; height: 4px; background-color: #f9895d; top:16px; left:10px; transform:rotate(45deg); transition:all 500ms; }
+        &:after{content: ''; display: block;position: absolute; width:16px; height: 4px; background-color: #f9895d; top:16px; left:10px; transform:rotate(-45deg); transition:all 500ms; }
+        &:hover{
+            &:before{transform:rotate(405deg); }
+            &:after{transform:rotate(315deg); }
+        }
+    }
+    .fancybox-nav{
+        span{visibility: visible; background-image: none;background-color: #fff;  border-radius: 50%; width:40px; height: 40px;border: 2px solid #f9895d;
+
+            &:before{content: ''; display: block;position: absolute; width:16px; height: 16px; border-right: 2px solid #f9895d; border-top: 2px solid #f9895d;  transform:rotate(45deg); top:calc(50% - 8px); left: 6px;}
+        }
+    }
+    .fancybox-prev{
+        span{
+            &:before{  transform:rotate(-135deg);  left: 12px;}
+        }
+    }
+
+
+/*END fancybox*/
+/*slick*/
+    .slick-arrow{width:83px; height:100%; background-color: rgba(232,232,232,.84); z-index: 10; opacity: 0; transition: opacity 300ms linear;
+        &:before{content: ''; display: block;position: absolute; width:31px; height: 31px; border-right: 7px solid #f29e7d; border-top: 7px solid #f29e7d;  transform:rotate(45deg); top:calc(50% - 22px); left: 16px;}
+        &:hover,
+        &:focus{background-color: rgba(232,232,232,.84);}
+    }
+    .slick-prev{ left:0;
+        &:before{  transform:rotate(-135deg);  left: 31px;}
+    }
+    .slick-next{right:0;}
+   .same,
+   .item-slider{
+       &:hover{
+            .slick-arrow{opacity: 1;}
+        }
+    }
+    .slick-dots{     bottom: -37px;
+        li{width: 20px; height: 20px; background-color: #ececec;  border: 1px solid #ddd; border-radius: 50%;    margin: 0 4px;
+            button{ width: 14px; height: 14px; border-radius: 50%; background-color: #f1c6b6;     margin: 2px;
+                &:before{   content: '';}
+            }
+            &.slick-active{
+                button{background-color: #f9895d;}
+            }
+        }
+    }
+/*END slick*/
+/*residention*/
+    .residention-wrapp{
+        .residention-align{
+            .title{font: 700 49px/70px 'proxima nova'; color:#767474; text-transform: uppercase;    padding: 84px 0 75px; letter-spacing: -0.7px; position: relative; max-width: calc(100% - 243px);
+                p{font: 700 30px/30px 'proxima nova'; color:#aeaeae;}
+                &:before{content: ''; display: block;position: absolute; width: 67px; height: 1px; background-color: #f9895d; left:0; bottom: 50px;}
+             }
+             .big-slider{ margin-bottom: 77px;
+                .slick-arrow{opacity: 1; background-color: transparent;
+                    &.slick-next:before{    left: 36px;}
+                    &:before{border-right: 5px solid #61605e;border-top: 5px solid #61605e;top: calc(50% - 10px);width: 19px;height: 19px;}
+                }
+                .big-slide-wrap{
+                    .big-slide{position: relative; overflow: hidden; height: 477px;
+                        img{position: absolute; max-width: none; left: 50%; top: 50%; transform:translate(-50%, -50%);}
+                    }
+                }
+            }
+            .text-box{ margin-bottom: 84px;
+                p{font: 400 14px/20px 'proxima nova'; color:#787878;
+
+                    span{font: 700 28px/28px 'proxima nova'; color: rgba(0,0,0,.47);     padding-top: 28px;    display: inline-block;   letter-spacing: -0.2px;}
+                }
+                h6{font: 700 28px/28px 'proxima nova'; color:#000; position: relative; padding-left: 29px; letter-spacing: -0.2px; margin-bottom: 44px;
+                        &:before{content: ''; display: block;position: absolute; width:10px; height: 100%; background-color: #f9895d;     left: 1px;    top: 0;}
+                    }
+            }
+            .item{margin-bottom: 115px;
+                .item-title{font: 700 27px/27px 'proxima nova'; color:#f9895d;     padding-bottom: 30px; letter-spacing: -0.2px;}
+                .same{
+                    .slide-wrap{width:378px; height: 258px; position: relative; overflow: hidden; margin-right: 15px; border:1px solid #f9895d;
+                        .slide{ position: absolute; left:50%; top:50%; transform: translate(-50%, -50%);
+                            a{
+                                img{ max-width: none;}
+                            }
+                        }
+                    }
+                    .slick-next {    right: 14px;
+                        &:after{content: ''; display: block; width:14px; height: 100%; right:-14px;  top:0; position: absolute; background-color: #fff; }
+                    }
+                }
+            }
+            .slick-dots{    bottom: -62px;}
+
+        }
+    }
+/*END residention*/

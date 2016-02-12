@@ -1,0 +1,28 @@
+@mixin font-face($style-name, $file:$style-name, $weight:normal, $style:normal) {
+
+    $filepath: "../fonts/" + $file;
+
+    @font-face {
+        font-family: quote($style-name);
+        src: url($filepath + ".eot");
+        src: url($filepath + ".eot?#iefix") format('embedded-opentype'),
+        url($filepath + ".woff") format('woff'),
+        url($filepath + ".ttf")  format('truetype'),
+        url($filepath + ".svg#" + $style-name + "") format('svg');
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+/* fonts */
+
+@include font-face('slick');
+@include font-face('bootstrap-icon', 'glyphicons-halflings-regular');
+@include font-face('proxima nova', 'proxima-nova-regular');
+@include font-face('proxima nova', 'proxima-nova-bold', 700);
+@include font-face('proxima nova', 'ProximaNova-Xbold', 800);
+
+@include font-face('century schoolbook', 'century-schoolbook-italic', 400, italic);
+@include font-face('helvetica', 'helveticaneuecyr-bold', 700);
+
+/* /fonts*/

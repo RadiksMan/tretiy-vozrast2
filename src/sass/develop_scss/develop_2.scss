@@ -1,0 +1,244 @@
+// contacts block on partial
+.contacts-wrap{width: 100%;
+    .contact-box{width: 100%;
+        .title-contact{font-size: 49px; font-weight: 700; font-family: "ProximaNova", sans-serif; text-transform: uppercase;  padding-top: 50px; padding-bottom: 18px;}
+        .contact-description{ border-top: 1px solid #f9895d;
+            .offices{float: left; width: 55%;
+                .central-office{float: left; width: 44%;}
+                .residence-office{float: right; width: 56%;}
+                .office-description{font-family: "ProximaNova", sans-serif; padding-top: 50px;
+                    .title-office{ padding-left: 20px;  border-left: 10px solid #f9895d; font-size: 23px; font-weight: 700; color: black;  margin-bottom: 20px; }
+
+                    .office-texter{padding:0px 0 0px 32px;position: relative;font-size: 15px; font-weight: 400; line-height: 1.75;
+                        &:after{content: '';width: 20px; height: 21px;  position: absolute; top:8px; left: 0; background-image: url(../images/place.png); background-repeat: no-repeat;}
+                        a{text-decoration: none; color: black;
+                            &:hover{color: #f9895d; text-decoration: underline;}
+                        }
+                    }
+
+                    .office-adress:after{ background-image: url(../images/place.png);}
+                    .office-tel:after{background-image: url(../images/phone.png);}
+                    .office-mail:after{background-image: url(../images/mail.png);}
+                    .office-bank:after{ background-image: url(../images/place.png); }
+                    .legal-adress:after{ background-image: url(../images/place.png); }
+                }
+            }
+            .form-block{float: right; width: 45%; border-left: 1px solid #f9895d; padding-bottom: 200px;
+                .contact-form-contact{width: 100%;  padding-left: 77px; padding-right: 109px;padding-top: 40px;
+                    .contact-form-item-input{width: 100%; padding-top: 0px; padding-bottom: 23px;
+                        textarea, input{border: none; outline: none; background-color: #f4f9fa; width: 100%;resize: none;font-family: "ProximaNova", sans-serif; font-size: 16px; font-weight: 400;  color: #8e8e8e; height: 40px; padding: 10px;border-radius: 1px;-webkit-appearance: none;
+                            &.error{box-shadow: 0px 0px 5px 3px rgba(255,0,0,1);}
+                        }
+                            ::-webkit-input-placeholder {color:#8e8e8e;}
+                            ::-moz-placeholder          {color:#8e8e8e;}
+                            :-moz-placeholder           {color:#8e8e8e;}
+                            :-ms-input-placeholder      {color:#8e8e8e;}
+                        textarea{height: 250px;}
+                        label{display: none !important;}
+
+                    }
+                    button{height: 60px; background-color:#f9895d; border: none; outline: none; color: white; width: 100%; font-size: 18px; font-weight: 700; font-family: "ProximaNova", sans-serif; cursor: pointer;transition: all 0.3s;
+                        &:hover{background-color: #E45015;}
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+// contacts block on main
+.contacts-wrap-main{width: 100%;display: table; position: relative; height: 666px;
+    .map-main{width: 100%; position: absolute; display: block;left: 0; top: 0;  }
+    .contact-box-main{width: 50%; background-color: rgba(0, 0, 0, 0.75);  display: table-cell; vertical-align: middle; padding-left: calc(50% - 1170px/2); position: relative; z-index: 2;
+        &:after{content: ''; width: 0;height: 0;border-style: solid;border-width: 666px 224px 0 0;border-color: rgba(0, 0, 0, 0.75) transparent transparent transparent; position: absolute; z-index: 3; top: 0; left: 100%;}
+
+        .title-contact-main{font-size: 49px; font-weight: 700; font-family: "ProximaNova", sans-serif; text-transform: uppercase;  padding-top: 54px; padding-bottom: 18px; color: white; position: relative;
+            &:after{content: '';position: absolute; bottom: 0; left: 0 ; height: 2px; width: 68px; background-color: #f9895d;}
+        }
+        .contact-description-main{ position: relative;
+            .soc-seti{position: absolute; bottom: 36px;left: 5px;
+                a{text-decoration: none; margin-right: 14px;
+                    img:hover {background: transparent;border-radius: 50%; transition: all 0.3s;}
+                    img:hover {background: rgba(175, 47, 8, 1); }
+                }
+            }
+            .offices-main{ width: 100%;
+                .central-office-main{float: left; width: 50%;}
+                .residence-office-main{float: right; width: 50%;}
+                .office-description-main{font-family: "ProximaNova", sans-serif; padding-top: 47px;color: white;
+                    .title-office-main{ padding-left: 20px;  border-left: 10px solid #f9895d; font-size: 23px; font-weight: 700; color: black;  margin-bottom: 20px; color: white;}
+
+                    .office-texter-main{padding:0px 0 0px 32px;position: relative;font-size: 15px; font-weight: 400; line-height: 1.75;
+                        &:after{content: '';width: 20px; height: 21px;  position: absolute; top:8px; left: 0; background-image: url(../images/place.png); background-repeat: no-repeat;}
+                        a{text-decoration: none; color: white;
+                            &:hover{color: #f9895d; text-decoration: underline;}
+                        }
+                    }
+
+                    .office-adress-main:after{ background-image: url(../images/place.png);}
+                    .office-tel-main:after{background-image: url(../images/phone.png);}
+                    .office-mail-main:after{background-image: url(../images/mail.png);}
+                    .office-bank-main:after{ background-image: url(../images/place.png); }
+                    .legal-adress-main:after{ background-image: url(../images/place.png); }
+                }
+            }
+        }
+    }
+}
+
+// google map
+    #mapInit {height: 350px;}
+    #mapInit2 {height: 666px;}
+
+// team block
+
+.team-wrap {    width: 100%;    overflow: hidden;
+    .team-title{font-size: 49px; font-weight: 700; font-family: "ProximaNova", sans-serif; text-transform: uppercase;  padding-top: 43px; padding-bottom: 20px; position: relative;    padding-left: 0px;
+        &:after{content: ''; position: absolute; bottom: 0; left: 0; width: 90px; height: 2px; background-color:#f9895d;}
+    }
+
+    .description-block .team-item{display: table; width: 100%;padding-top: 50px;padding-bottom: 50px;
+        .mbox{padding: 0;}
+        &:nth-child(even){background-color: #f5f7f8;}
+        .left-box{ text-align: center;display: table-cell; vertical-align: middle;
+            .for-table-fix{}
+            .conteiner-team {border-radius: 113px; display: inline-block; vertical-align: middle; width: 226px; height: 226px; overflow: hidden;
+                img{width: 100%; height: 100%;}
+            }
+        }
+        .right-box{display: table-cell; padding-top: 10px; padding-bottom: 10px;padding-left: 44px;vertical-align: middle;
+            .content{
+
+                .conteiner-team{border-radius: 113px; vertical-align: middle; width: 226px; height: 226px; overflow: hidden;display: none;
+                    img{width: 100%; height: 100%;}
+                }
+                .title-name{font-size: 29px; font-weight: 700; font-family: "ProximaNova", sans-serif; text-transform: uppercase;  padding-top: 10px;}
+                .sub-title{font-size: 20px; font-weight: 400; font-family: "ProximaNova", sans-serif; padding-top: 5px; padding-bottom: 26px; color: #848484;position: relative;
+                    &:after{content: ''; position: absolute; bottom: 0; left: 0; width: 70px; height: 2px; background-color:#f9895d; }
+                }
+                .who-am-i{ padding-top: 18px;
+                    i,p{font-size: 16px; font-weight: 400; font-family: "ProximaNova", sans-serif; color: #848484;line-height: 28px;
+                        span{color: black;}
+                    }
+                }
+            }
+        }
+    }
+}
+
+// partners block block
+.partners-block{ background-color: #f8fbfc; margin-bottom: 40px;
+    &.no-margin-bottom{margin-bottom: 0;}
+    .conteiner-partners{
+        .title-block{ font-size: 49px; padding-top: 90px; padding-bottom: 20px;position: relative; font-family: "ProximaNova", sans-serif; text-transform: uppercase; font-weight: 700; color: #767474;
+            &:after{content: '';position: absolute; bottom: 0; left: 0 ; height: 2px; width: 68px; background-color: #bd9655;}
+            a{text-decoration: none;font-size: inherit;color: inherit;font-weight: inherit;display: inline-block;transition: color 300ms ease;
+                &:hover{color: #f9895d;}
+            }
+         }
+        .convert-part{display: table; padding-top: 56px; padding-bottom: 106px;
+            .item{ display: table-cell; width: 20%; vertical-align: middle; text-align: center;
+                img{ filter: grayscale(100%); cursor: pointer;}
+                //img:hover{filter: grayscale(100%);}
+            }
+        }
+    }
+}
+
+// short about us block
+.short-about-wrap{
+    .conteiner-about{
+        .title-block{ font-size: 49px; padding-top: 90px; padding-bottom: 20px;position: relative; font-family: "ProximaNova", sans-serif; text-transform: uppercase; font-weight: 700; color: #767474;
+            &:after{content: '';position: absolute; bottom: 0; left: 0 ; height: 2px; width: 68px; background-color: #f9895d;}
+        }
+    }
+    .content-block{padding-top: 34px; padding-bottom: 32px;
+        p{font-size: 14px; padding-top: 10px; padding-bottom: 10px;position: relative; font-family: "ProximaNova", sans-serif;font-weight: 400; color: #787878; line-height: 20px; }
+    }
+}
+
+// virtual tour block
+
+.virtual-tour-wrap{background-color: #f8fbfc;
+    .title-box{font-family: "ProximaNova", sans-serif; text-transform: uppercase; font-weight: 700; color: black; border-left: 10px solid #f9895d; padding-left: 20px; font-size: 28px; line-height: 33px;  }
+    .content{text-align: center; padding-top: 20px; padding-bottom: 50px;
+        iframe{width: 1070px; height: 570px;}
+    }
+}
+
+// residention block
+.residetion-wrap{background-color: #f8fbfc;
+    .title-box{font-size: 49px; padding-top: 38px; padding-bottom: 20px;position: relative; font-family: "ProximaNova", sans-serif; text-transform: uppercase; font-weight: 700; color: #767474;
+            &:after{content: '';position: absolute; bottom: 0; left: 0 ; height: 2px; width: 68px; background-color: #f9895d;}
+    }
+    .content-block{ padding-top: 100px; padding-bottom: 87px;
+        .res-image{width: 52%; float: left;height: 355px;overflow: hidden;}
+        .discription-block{width: 48%; float: right; padding-left: 26px;
+            .headtext{
+                p{font-family: "ProximaNova", sans-serif; font-weight: 400; color: #787878;font-size: 14px; line-height: 20px;     padding-top: 23px;}
+                h6{font: 700 28px/28px 'proxima nova'; color:#000; position: relative; padding-left: 29px; letter-spacing: -0.2px;
+                        &:before{content: ''; display: block;position: absolute; width:10px; height: 100%; background-color: #f9895d;     left: 1px;    top: 0;}
+                    }
+            }
+            .dertew{padding-top: 56px; }
+            a{font-family: "ProximaNova", sans-serif; font-weight: 700; color: #4cb4fc; font-size:15px; text-decoration: none;transition: all 0.5s;
+                &:hover{color: #f9895d;}
+            }
+        }
+    }
+}
+
+// reviews block
+.reviews-wrap-main{
+    .reviews-title{font-size: 49px; padding-top: 30px; padding-bottom: 20px;position: relative; font-family: "ProximaNova", sans-serif; text-transform: uppercase; font-weight: 700; color: #424242;
+            &:after{content: '';position: absolute; bottom: 0; left: 0 ; height: 2px; width: 68px; background-color: #f9895d;}
+    }
+    .content-wrap{
+        .head-title{font-size: 23px; padding-top: 44px; padding-bottom: 30px; font-family: "ProximaNova", sans-serif; text-transform: uppercase; font-weight: 700; color: #424242;}
+        .reviews-wrap{
+            .contact-form-row{max-width: 750px;
+                .contact-form-item{width: 100%; padding-top: 0px; padding-bottom: 30px;
+                    textarea, input{border: none; outline: none; background-color: #f4f9fa; width: 100%;resize: none;font-family: "ProximaNova", sans-serif; font-size: 16px; font-weight: 400;  color: #8e8e8e; height: 40px; padding: 10px;border-radius: 1px;-webkit-appearance: none;
+                        &.error{box-shadow: 0px 0px 5px 3px rgba(255,0,0,1);}
+                    }
+                        ::-webkit-input-placeholder {color:#8e8e8e;}
+                        ::-moz-placeholder          {color:#8e8e8e;}
+                        :-moz-placeholder           {color:#8e8e8e;}
+                        :-ms-input-placeholder      {color:#8e8e8e;}
+                    textarea{height: 250px;}
+                    label{display: none !important;}
+
+                }
+                .grider-left { float: left; max-width: 345px;}
+                .grider-right{float: right; max-width: 345px;}
+                .inside-capture{text-align: center; background-color: #f4f9fa;height: 40px;
+                    img{ height: 40px;}
+                }
+                button{height: 60px; background-color:#f9895d; border: none; outline: none; color: white; width: 100%; max-width: 345px; font-size: 18px; font-weight: 700; font-family: "ProximaNova", sans-serif; cursor: pointer; transition: all 0.3s;
+                    &:hover{background-color: #E45015;}
+                }
+            }
+        }
+    }
+}
+
+.tab-2-small-list{width: 100%;}
+.club-tabs-content-wrap .club-tabs-content {  position: absolute; left: 0;}
+.club-tabs-content .slick-dots { bottom: 30px;}
+.club-tabs-content-wrap .club-tabs-content.small-list-wrap .small-list-item {opacity: 1;}
+.club-tabs-content .slick-dots {bottom: 37px;}
+.club-tabs-content-wrap {padding-bottom: 105px; margin-bottom: 0px;
+     .small-list-wrap{
+        .small-list-item{ margin: 0 10px;}
+    }
+}
+
+.map-wrap-poc{ padding-top: 20px; padding-bottom: 20px;
+    .ssilki-block{ max-width: 300px;
+        ul li{padding-bottom: 20px;}
+        a{text-decoration: none;font-size: 14px; font-weight: 700; font-family: "ProximaNova", sans-serif; cursor: pointer; color: #8fe3ff; transition: color 300ms ease;}
+        a:hover {color: #f9895d;}
+    }
+}
