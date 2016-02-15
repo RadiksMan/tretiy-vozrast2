@@ -37,7 +37,7 @@ function oneHeightItems(){
     if($(window).width()>640){
         $('.small-list').each(function() {
 
-            oneHeight($('.small-list-title'));
+            oneHeight($(this).find('.small-list-title'));
 
         });
     }
