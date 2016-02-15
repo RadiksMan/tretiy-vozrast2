@@ -200,7 +200,8 @@
         }
         .small-list-nums{font-size:19px;font-weight: 700;margin-bottom: 15px;color:#4cb4fc;}
         .small-list-title{display: table;width: 100%;font-size: 28px;line-height:28px;font-weight: 700;color:#000;margin-bottom: 15px;
-            span{display: table-cell;padding-left:30px;position: relative;vertical-align: middle;
+            div{display: table-cell;;vertical-align: middle;}
+            span{display: block;position: relative;padding-left:30px;
                 &:before{content: '';display: block;position: absolute;left: 4px;top: 0;bottom: 4px;width: 10px;background-color: #f9895d;}
             }
         }
