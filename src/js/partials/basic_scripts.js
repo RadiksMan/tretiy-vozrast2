@@ -53,7 +53,7 @@ function oneHeightItems(){
 
                 $('.small-list').each(function() {
 
-                    oneHeight($('.small-list-title'));
+                    oneHeight($(this).find('.small-list-title'));
 
                 });
 
