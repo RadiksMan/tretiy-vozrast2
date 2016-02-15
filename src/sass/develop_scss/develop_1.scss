@@ -278,7 +278,7 @@
     .footer{
         .footer-wrap{background-image:url(../images/footer-background.png);background-color:#292929;background-position: left center;padding: 40px 0 50px 0;}
         .footer-left{float: left;color:#fff;font-size: 17px;padding-top: 3px;width: calc(100% - 190px);
-            a{color:#fff;text-decoration: none;
+            a{color:#fff;text-decoration: none;display: inline-block;
                 &:hover{text-decoration: underline;}
             }
         }
