@@ -307,7 +307,7 @@
 
 /* fixed-button */
 
-    .call-button-fixed{position: fixed;right: -75px;top: 325px;transform:rotateZ(-90deg);z-index: 15;
+    .call-button-fixed{position: fixed;right: -75px;top: 325px;transform:rotateZ(-90deg);z-index: 15;display:none;
         a{display: block;border-radius: 5px 5px 0 0;background-color: #f9895d;font-size: 16px;text-decoration:none;color:#fff;text-transform: uppercase;font-weight: 700;position: relative;overflow: hidden;padding: 20px 25px 20px 35px;letter-spacing: 1.5px;
             span{display: inline-block;vertical-align: middle;position: relative;z-index: 1;}
             .call-button-fixed-text{margin-right: 10px;}

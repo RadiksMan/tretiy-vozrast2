@@ -90,7 +90,7 @@
                         &:last-child{margin-bottom: 0;}
                     }
                 }
-                &:hover{
+                &:hover{z-index:1;
                     &>ul{display: block;}
                 }
             }

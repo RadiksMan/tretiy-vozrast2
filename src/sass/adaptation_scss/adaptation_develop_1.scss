@@ -60,6 +60,12 @@
 
     /* /breadcrumbs */
 
+    /* fixed button */
+
+        .call-button-fixed{display: block;top:200px;}
+
+    /* /fixed button */
+
 }
 @media screen and (max-width: 992px){
 
@@ -92,6 +98,8 @@
         }
 
     /* /small list */
+
+
 
 }
 @media screen and (max-width: 960px){
@@ -334,12 +342,6 @@
         .club-tabs-button{padding-right: 0;}
 
     /* /club-tabs */
-
-    /* fixed button */
-
-        .call-button-fixed{display: block;top:110px;}
-
-    /* /fixed button */
 
 }
 @media screen and (max-width: 666px){
@@ -738,7 +740,6 @@
 
     /* small lists */
 
-
         .small-list-wrap{padding-top: 25px;
             .small-list-item{margin-bottom: 50px;
                 &:last-child{margin-bottom: 0;}
@@ -910,6 +911,12 @@
         }
 
     /* /breadcrumbs */
+
+    /* fixed button */
+
+        .call-button-fixed{top:130px;}
+
+    /* /fixed button */
 
 }
 @media screen and (max-width: 320px){
