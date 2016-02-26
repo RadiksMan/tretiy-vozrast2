@@ -57,7 +57,7 @@
 
 
 
-    .club-tabs-content-wrap .small-list-wrap .small-list-img img{ width: 100%;}
+
     .club-tabs-content-wrap .small-list-wrap .small-list-item { margin: 0 40px;}
     .club-tabs-content-wrap .slick-prev:hover, .club-tabs-content-wrap .slick-next:hover { opacity: 1;}
     // contacts block adaptation
@@ -96,8 +96,8 @@
 
 // contacts on main adaptation
     .contacts-wrap-main .contact-box-main .contact-description-main {padding-bottom: 72px;}
-    .contacts-wrap-main {height: auto; margin-bottom: 1000px;}
-    .contacts-wrap-main .contact-box-main { width: 100%;}
+    .contacts-wrap-main {height: 2950px;}
+    .contacts-wrap-main .contact-box-main { width: 100%; display: block; height: auto;}
     .contacts-wrap-main .contact-box-main .contact-description-main .offices-main .central-office-main { float: initial;width: 100%;}
     .contacts-wrap-main .contact-box-main .contact-description-main .offices-main .residence-office-main {float: initial;width: 100%;padding-top: 115px;}
     #mapInit2 { height: 2950px;}
@@ -132,7 +132,9 @@
 
 // partners adaptation
     .partners-block .conteiner-partners .title-block { font-size: 60px;}
-    .partners-block .conteiner-partners .convert-part .item {display: inline-block;  width: 50%;}
+    .partners-block .conteiner-partners .convert-part .item {display: inline-block;  width: 50%;
+        &:last-child{ margin-right: 25%;}
+    }
     .partners-block .conteiner-partners .convert-part { text-align: right;}
 
 // team adaptation
@@ -202,9 +204,11 @@
     .reviews-wrap-main .content-wrap .reviews-wrap .contact-form-row .contact-form-item input.answertext {font-size: 12px;padding: 10px 5px;}
     .reviews-wrap-main .content-wrap .reviews-wrap .contact-form-row button { height: 37px; font-size: 18px;}
     .reviews-wrap-main .reviews-wrap {padding-bottom: 25px;}
+    #mapInit2 {height: 1500px;}
 
 // contacts on main adaptation
-    .contacts-wrap-main .contact-box-main {padding-left: 26px;}
+    .contacts-wrap-main { height: 1500px; margin-bottom: 0;}
+    .contacts-wrap-main .contact-box-main {padding-left: 26px; height: auto;}
     .contacts-wrap-main .contact-box-main .title-contact-main {font-size: 30px;padding-top: 85px; padding-bottom: 14px;}
     .contacts-wrap-main .contact-box-main .contact-description-main .offices-main .office-description-main .title-office-main {font-size: 24px;    padding-left: 12px; border-left: 6px solid #f9895d;margin-bottom: 24px;}
     .contacts-wrap-main .contact-box-main .contact-description-main .offices-main .office-description-main .office-texter-main {padding: 0px 0 0px 34px;font-size: 16px; line-height: 26px;}
@@ -213,7 +217,6 @@
     .contacts-wrap-main .contact-box-main .contact-description-main .offices-main .office-description-main .office-mail-main:after {width: 15px;height: 11px; top: 0;}
     .contacts-wrap-main .contact-box-main .contact-description-main .offices-main .office-description-main .office-bank-main:after  { width: 12px; height: 18px;top: 0px;}
     .contacts-wrap-main .contact-box-main .contact-description-main .offices-main .office-description-main .legal-adress-main:after { width: 12px; height: 18px;top: 0px;}
-    .contacts-wrap-main { margin-bottom: 490px;}
     .contacts-wrap-main .contact-box-main .contact-description-main .offices-main .office-description-main {padding-top: 10px;}
     .contacts-wrap-main .contact-box-main .contact-description-main .offices-main { padding-top: 21px;}
     .contacts-wrap-main .contact-box-main .contact-description-main .offices-main .residence-office-main{padding-top: 58px;}

@@ -195,8 +195,10 @@
 
     .small-list-wrap{margin: 0 -15px;
         .small-list-item{display: inline-block;vertical-align: top;width: calc(33.33% - 4px);padding: 0 15px;margin-bottom: 60px; }
-        .small-list-img{margin-bottom: 20px;display: table;text-align: center;height: 250px;width: 100%;
-            span{display: table-cell;vertical-align: middle;}
+        .small-list-img{margin-bottom: 20px;text-align: center;height: 250px;width: 100%; display: flex;align-items: center;justify-content: space-around;
+            span{display: flex; justify-content: space-around; vertical-align: middle; max-height: 100%;
+                img{max-height: 100%;}
+            }
         }
         .small-list-nums{font-size:19px;font-weight: 700;margin-bottom: 15px;color:#4cb4fc;}
         .small-list-title{display: table;width: 100%;font-size: 28px;line-height:28px;font-weight: 700;color:#000;margin-bottom: 15px;
